@@ -33,6 +33,15 @@ img{
     border-radius: 25px;
     text-align: center;
 }
+.div3{
+    width: 650px;
+    margin: auto;
+    display:block;
+    padding:5px 5px;
+    border-radius: 25px;
+    text-align: center;
+    background-color:rgb(200, 0, 255);
+}
 .button-class{
     background-color: rgb(184, 28, 201);
     text-decoration: none;
@@ -51,4 +60,43 @@ img{
     background-color: black;
     color: rgb(184, 28, 201);
     border: 2px solid rgb(184, 28, 201);
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+.tab button {
+    background-color: inherit;
+    float:none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    text-align: center;
+}
+.tab button:hover {
+    background-color: #ddd;
+}
+.tab button.active {
+    background-color: #ccc;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+a:link {
+    color: blue;
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    color: hotpink;
+}
+a:active {
+    color: blue;
 }
