@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-commerce on Douyin</title>
+  <link rel="stylesheet" href="bus.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1><span class="highlight">E-commerce</span> on <span class="douyin">Douyin</span></h1>
+    <p class="subtitle">Exploring the rise of AI-powered shopping on China's TikTok 🎵🛍️</p>
+  </header>
+
+  <section class="intro">
+    <h2>🔍 Introduction</h2>
+    <p>Douyin combines entertainment and e-commerce, using AI to drive personalized content and boost business engagement. Learn how technology transforms online shopping in China.</p>
+  </section>
+
+  <section class="pros-cons">
+    <h2>✅ Advantages & ❌ Disadvantages</h2>
+    <div class="points-grid">
+      <div class="pro">
+        <h3>💡 Personalized AI Content</h3>
+        <p>Boosts exposure, targets specific audiences, and improves ROI.</p>
+      </div>
+      <div class="con">
+        <h3>⚠️ Limited Discovery</h3>
+        <p>Can narrow product diversity and create excessive consumption cycles.</p>
+      </div>
+      <div class="pro">
+        <h3>🎥 Seamless Livestream Shopping</h3>
+        <p>Users watch and shop without leaving the stream, enhancing convenience.</p>
+      </div>
+      <div class="con">
+        <h3>🔐 Privacy & Overconsumption Risks</h3>
+        <p>Algorithmic decisions may affect user satisfaction and data safety.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="data-highlight">
+    <h2>📊 Key Stats</h2>
+    <div class="stats-grid">
+      <div class="stat">📹 <strong>65%</strong><br/>Sales via Short Videos & Livestreams</div>
+      <div class="stat">💰 <strong>RMB 2T</strong><br/>Total Sales in First 10 Months of 2024</div>
+      <div class="stat">📈 <strong>60%</strong><br/>YoY Growth in Sales</div>
+    </div>
+  </section>
+
+  <section class="real-world">
+    <h2>🌍 Real-World Examples</h2>
+    <p><strong>Lululemon</strong> boosted China sales by 75% through Douyin livestreams. Other brands like <strong>La Mer</strong> and <strong>KANS</strong> use influencer marketing + AI for visibility.</p>
+
+    <div class="chart-container">
+        <canvas id="gmvChart"width="600" height="400"></canvas>
+      </div>
+        
+  </section>
+
+  <section class="future">
+    <h2>🔮 Future of Douyin E-commerce</h2>
+    <p>Expect more AI innovations, personalized product suggestions, and deeper integration of shopping within entertainment. What does the future hold for platforms like Douyin?</p>
+  </section>
+
+  <footer>
+    <p>📝 Created for SFU Beedie | Citations available upon request</p>
+  </footer>
+
+  <script>
+    const ctx = document.getElementById('gmvChart').getContext('2d');
+    const gmvChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['KANS', 'Estee Lauder', 'La Mer', 'HEXIN', 'Helena Rubinstein'],
+            datasets: [{
+                label: 'GMV (Billion Yuan)',
+                data: [3.5, 2.8, 2.3, 1.8, 1.2],
+                backgroundColor: [
+                    '#00C4CC',
+                    '#FF2D55',
+                    '#A29BFE',
+                    '#55EFC4',
+                    '#FAB1A0'
+                ],
+                borderRadius: 8
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'GMV (Billion Yuan)'
+                    }
+                }
+            },
+            plugins: {
+                legend: { display: false },
+                title: {
+                    display: false
+                }
+            }
+        }
+    });
+  </script>
+
+</body>
+</html>
