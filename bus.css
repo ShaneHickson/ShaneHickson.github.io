@@ -1,0 +1,113 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: #111;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: linear-gradient(90deg, #000, #111);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  header .highlight {
+    color: #00ffff;
+  }
+  
+  header .douyin {
+    color: #ff2d55;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+    color: #ccc;
+  }
+  
+  section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .intro, .future {
+    background: #f7f7f7;
+    border-left: 5px solid #00ffff;
+    border-radius: 8px;
+  }
+  
+  .points-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .pro {
+    background: #e6fff7;
+    border-left: 4px solid #00d9a0;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  
+  .con {
+    background: #ffe6eb;
+    border-left: 4px solid #ff2d55;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  
+  .stats-grid {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 1.5rem;
+  }
+  
+  .stat {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    width: 30%;
+  }
+  
+  .chart {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #111;
+    color: #ccc;
+  }
+  .chart-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .chart-container {
+      padding: 0.5rem;
+    }
+  }
