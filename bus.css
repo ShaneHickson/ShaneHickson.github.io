@@ -111,3 +111,15 @@ body {
       padding: 0.5rem;
     }
   }
+  .real-world-subsection {
+    background-color: #fffdfd;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .real-world-subsection h3 {
+    font-size: 1.3rem;
+    color: #ff5891;
+    margin-bottom: 15px;
+  }
